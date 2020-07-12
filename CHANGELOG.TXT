@@ -1,0 +1,44 @@
+Module Name      : VideoBB
+Version Number   : 2.3
+Module developer : Kutovoy Nickolay <kutovoy@gmail.com>
+
+Version 2.3:
++       Ability to change media name added, so u can change media name without
+    media related information lost.
+*       Media name change, genre and description change are avalaible only to
+    media moderators.
+*       Media moderators can be granted to users via granting XOOPS admin rights
+    for module or via VideoBB config option.
++       Some missed language constants added && some PHP generated warnings fixed.
+
+Version 2.2:
+*       Security improvements.
+*       SQL request optimization && caching, saved up to 50% in time and SQL
+    queries count;
++       Configurable root folders feature, you can now add as many root folders
+    as you need, with different extensions of media files to show.
++       Images uploading to assign an image to folder with media.
++       XOOPS templates engine used.
++       XOOPS comment system used, you can comment each media.
++       Admin prune options added.
+-       Fresh video block removed till next version.
+
+
+Version 2.1 is first (and not last ;) non developer-to-developer release
+*       Major part of engine was rewrited/restructurized/fixed to comply XOOPS
+    standarts and rules.
++       Added rich set of configurable option into admin panel. All hardcoded
+    option are accessible now via admin panel.
++       Created upgrade script for upgrading from pre 2.1 version to 2.1.
+    (surely for next versions it will be avalaible too)
+*       Feedback system rewrited. All data saved and edited thru database.
+*       Logging system rewrited. Some security check done. (like anti-injection)
+*       Better translation for english written. English and Russian will always
+    be two languages at least for which any new version of VideoBB will be
+    translated.
++       Some importing function added for guys who successfully set up two or
+    more VideoBB v2.0 modules and wan't to merge it into single now. (Will be
+    used later when multy-root version on VideoBB come)
+*   Some minor design changes into main movies list done.
+
+    

@@ -1,0 +1,16 @@
+Module Name      : VideoBB
+Version Number   : 2.3
+Module developer : Kutovoy Nickolay <kutovoy@gmail.com>
+
+Install Instructions
+1. Upload the videobb directory to XOOPS_ROOT_URL/modules/
+
+2. Log in to your site as administrator.
+
+3. Install the module using the XOOPS module administration panel at 'System Admin -> Modules'.
+
+4. Visit module administration panel and set at least one root folder, like:
+    * Path to root folder with movies - like /mnt/shared
+    * Path to shared folder, URL - like file://a.b.c.d/shared
+                                        http://a.b.c.d/shared
+                                         ftp://a.b.c.d/shared

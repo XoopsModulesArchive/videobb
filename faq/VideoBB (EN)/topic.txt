@@ -1,0 +1,45 @@
+Module Name      : VideoBB<br>
+Version Number   : 2.1<br>
+Module developer : Kutovoy Nickolay <kutovoy@gmail.com><br>
+<br>
+Module Description<br>
+    Suppose that you have some server sharing folder filled with movies.<br>
+You (and your users) can access these movies thru sharing but might be you<br>
+want to rate, to descript each movie, to see some hits statistic and simply <br>
+to have some more user friendly interface than usual shared folder.<br>
+    What is done in this version:<br>
+*   VideoBB build web page for all subfolders in a root folder<br>
+    Page contain links to subfolders with movies, it's ranks, <br>
+    description, genre, modification time.<br>
+*   Supported sorting of movies with different modes (&& reverse).<br>
+*   Ability to view movies in browser (Gecko && IE).<br>
+*   Recursive dirirectories support.<br>
+*   Builtin FAQ & Feedback system for VideoBB. (adm. configurable)<br>
+*   XOOPS codes && smileys in description are allowed.(user configurable)<br>
+*   Builtin logging.(adm. configurable)<br>
+*   Set of configurable options for Admin && user.<br>
+*   License information for movies might be displayed.(adm. configurable)<br>
+*   Automatic rearrangment of movies in root folder into created sub-folders<br>
+    with similar name.(adm. configurable)<br>
+*   readme.txt && genre.txt files, are generated during movies description<br>
+    && can be readed to fulfill missing information about movie.(adm. configurable)<br>
+<br>
+    Module tested with Samba servers using file://a.b.c.d/some_shared_url, but <br>
+http or similar servers supported.<br>
+<br>
+    Some demo (may be old at this time) version is available at<br>
+http://tech21.soborka.net/modules/vbb<br>
+    (russian language, movies located within local network - so no<br>
+    downloading possible).<br>
+<br>
+License<br>
+    This module is released under the GPL license. See LICENSE.txt for details.<br>
+<br>
+Languages<br>
+    Translations other than english && russian will be at the development <br>
+site http://dev.xoops.org/modules/xfmod/project/?videobb if someone will help me<br>
+by writing them.<br>
+
+Feedback<br>
+    For any suggestions, comments, bug reports and feature requests visit the development site at:<br>
+http://dev.xoops.org/modules/xfmod/project/?videobb<br>

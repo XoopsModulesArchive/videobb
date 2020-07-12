@@ -1,0 +1,52 @@
+<table>
+<tr><td valign="top">
+    <table><tr><td align="center">
+        <{if $videobb_media_image_data }>
+            <table><tr><th align="center"><{$videobb_media_image_data_title}></th></tr></table>
+            <{$videobb_media_image_data}>
+        <{/if}>
+    </td></tr><tr><td align="center">
+        <{if $videobb_media_vote_data }>
+            <table><tr><th align="center"><{$videobb_media_vote_data_title}></th></tr></table>
+            <{$videobb_media_vote_data}>
+        <{/if}>
+    </td></tr></table>
+</td><td valign="top">
+    <table><tr><td valign="top" align="center">
+        <{if $videobb_media_name_data }>
+            <table><tr><th align="center"><{$videobb_media_name_data_title}></th></tr></table>
+            <{$videobb_media_name_data}>
+        <{/if}>
+    </td></tr><tr><td valign="top" align="center">
+        <{if $videobb_media_genre_data }>
+            <table><tr><th align="center"><{$videobb_media_genre_data_title}></th></tr></table>
+            <{$videobb_media_genre_data}>
+        <{/if}>
+    </td></tr><tr><td valign="top" align="center">
+        <{if $videobb_media_descr_data }>
+            <table><tr><th align="center"><{$videobb_media_descr_data_title}></th></tr></table>
+            <{$videobb_media_descr_data}>
+        <{/if}>
+    </td></tr></table>
+</td></tr>
+</table>
+
+<{if $videobb_comments }>
+    <table><tr><th align="center"><{$videobb_comments_title}></th></tr></table>
+    <div style="text-align: center; padding: 3px; margin: 3px;">
+      <{$commentsnav}>
+      <{$lang_notice}>
+    </div>
+
+    <div style="margin: 3px; padding: 3px;">
+    <!-- start comments loop -->
+    <{if $comment_mode == "flat"}>
+      <{include file="db:system_comments_flat.html"}>
+    <{elseif $comment_mode == "thread"}>
+      <{include file="db:system_comments_thread.html"}>
+    <{elseif $comment_mode == "nest"}>
+      <{include file="db:system_comments_nest.html"}>
+    <{/if}>
+    <!-- end comments loop -->
+    </div>
+<{/if}>

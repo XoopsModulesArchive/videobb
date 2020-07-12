@@ -1,0 +1,27 @@
+<{$videobb_javascript}>
+
+<table>
+<{foreach item=tr from=$videobb_roots_list}>
+    <tr>
+    <{foreach item=td from=$tr}>
+        <th><{$td}></th>
+    <{/foreach}>
+    </tr>
+<{/foreach}>
+</table>
+
+
+<{if $videobb_view == 'file'}>
+    <{include file="db:videobb_header.html"}>
+<{/if}>
+<{if $videobb_view == 'media'}>
+    <{include file="db:videobb_media_view.html"}>
+<{/if}>
+<{if $videobb_view != 'file'}>
+    <{include file="db:videobb_folder_view.html"}>
+<{/if}>
+<{if $videobb_view == 'file'}>
+    <{include file="db:videobb_file_view.html"}>
+<{/if}>
+
+<{include file="db:videobb_footer.html"}>

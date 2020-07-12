@@ -1,0 +1,111 @@
+<table>
+    <tr>
+        <{if $videobb_folders_list}>
+            <th>
+                <{$videobb_folders_list}>
+            </th>
+        <{/if}>
+        <{if $videobb_flink_index}>
+            <th>
+                <{$videobb_flink_index}>
+            </th>
+        <{/if}>
+        <{if $videobb_flink_back}>
+            <th>
+                <{$videobb_flink_back}>
+            </th>
+        <{/if}>
+    </tr>
+</table>
+<table>
+    <{if $videobb_fresult.folders}>
+        <tr>
+            <{foreach item=fc from=$videobb_fresult.fcaptions}>
+                <th>
+                   <{$fc.1}>
+                </th>
+            <{/foreach}>
+        </tr>
+        <{foreach item=folder from=$videobb_fresult.folders}>
+            <tr>
+                <td <{if $folder.descr}>rowspan="2"<{/if}>>
+                    <{$folder.1}>
+                    <{if $folder.image}>
+                        <br>
+                        <{$folder.image}>
+                    <{/if}>
+                </td>
+                <td>
+                    <{$folder.2}>
+                </td>
+                <td>
+                    <{$folder.3}>
+                </td>
+                <td>
+                    <{$folder.4}>
+                </td>
+                <td>
+                    <{$folder.5}>
+                </td>
+                <td>
+                    <{$folder.6}>
+                </td>
+                <td>
+                    <{$folder.7}>
+                </td>
+            </tr>
+            <{if $folder.descr}>
+            <tr>
+                <td colspan="6">
+                    <{$folder.descr}>
+                </td>
+            </tr>
+            <{/if}>
+            <tr>
+                <td colspan="7">
+                    <hr>
+                </td>
+            </tr>
+        <{/foreach}>
+        </tr>
+    <{/if}>
+</table>
+<table>
+    <{if $videobb_fresult.files}>
+        <tr>
+            <{foreach item=ffc from=$videobb_fresult.ffcaptions}>
+                <th>
+                   <{$ffc.1}>
+                </th>
+            <{/foreach}>
+        </tr>
+        <{foreach item=file from=$videobb_fresult.files}>
+            <tr>
+                <td>
+                    <{$file.1}>
+                </td>
+                <td>
+                    <{$file.2}>
+                </td>
+                <td>
+                    <{$file.3}>
+                </td>
+                <td>
+                    <{$file.4}>
+                </td>
+                <td>
+                    <{$file.5}>
+                </td>
+                <td>
+                    <{$file.6}>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <hr>
+                </td>
+            </tr>
+        <{/foreach}>
+        </tr>
+    <{/if}>
+</table>
